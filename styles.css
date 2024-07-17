@@ -1,0 +1,321 @@
+.gradient-background {
+  background: linear-gradient(300deg, #CDE8E5, #7AB2B2, #4D869C);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg, #CDE8E5, #CDE8E5, #CDE8E5);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#navbar{
+    position: fixed;
+    width: 100vw;
+    font-size: larger;
+}
+
+
+/*Notebook, desktop a vyšší*/
+@media (min-width: 992px){
+
+    #navbar .container-fluid{
+        justify-content: center;
+    }
+
+    #navbar .navbar{
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    /*Hero*/
+    #hero{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    p{
+      font-size: 16px;
+    }
+
+    #hero img{
+      width: 45vw;
+      margin-top: 40px;
+    }
+
+    .heroText{
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+
+    /*Why us*/
+    #whyUs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #whyUs h2{
+      margin-top: 40px;
+    }
+
+    .whyContainer{
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    .why{
+      display: grid;
+      grid-template-columns: 0.15fr 1fr;
+      width: 20vw;
+      margin: 40px 25px;
+    }
+
+    .why p{
+      grid-column-start: 2;
+    }
+
+    /*About us*/
+    #aboutUs{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #aboutUs img{
+      width: 40vw;
+    }
+
+    #aboutUs h2{
+      grid-column: span 2;
+      margin-top: 20px;
+    }
+    
+    .aboutContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 25px 0px;
+    }
+
+    #aboutUs #imgContainer{
+      order: 3;
+    }
+
+    .aboutContainer ul{
+      list-style: none;
+      margin: 0px 50px;
+    }
+
+    .aboutContainer li{
+      margin: 20px 0px;
+      font-size: 20px;
+    }
+
+    /*Recruitment */
+    #recruitment{
+      margin-top: 40px;
+    }
+
+    .gridClass{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #recruitment h2{
+      text-align: center;
+    }
+
+    #recruitment img{
+      width: 40vw;
+    }
+
+    #recruitment ul{
+      list-style: none;
+    }
+
+    #recruitmentFeatures{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #recruitment .why{
+      margin: 10px 0px;
+      width: 40vw;
+    }
+
+    #recruitment .why p{
+      font-size: 20px;
+    }
+
+    #lifeAfter{
+      order: 2;
+    }
+
+    }
+
+
+/* Tablet, mobil*/
+@media (max-width: 991px){
+
+  #hero img{
+    width: 100vw;
+    margin-top: 56px;
+    margin-bottom: 50px;
+  }
+
+  #hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroText{
+    margin-bottom: 50px;
+  }
+
+  #whyUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why{
+    text-align: center;
+    margin: 10px 10px;
+  }
+
+  /*About us*/
+  #aboutUs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #aboutUs img{
+    margin: 30px 0px;
+    width: 85vw;
+  }
+
+  #aboutUs ul{
+    list-style: none;
+    margin: 30px 20px 30px 0px; 
+  }
+
+  #aboutUs li{
+    margin: 20px 0px;
+  }
+
+  /*Recruitment */
+  #recruitment{
+    margin-top: 40px;
+  }
+
+  #recruitment h2{
+    text-align: center;
+  }
+
+  .gridClass{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  #recruitment img{
+    width: 85vw;
+  }
+
+  #recruitment ul{
+    list-style: none;
+    margin: 40px 20px 40px 0px;
+  }
+
+  #recruitment ul li{
+    margin: 10px 0px;
+  }
+
+}
+
+
+/* Overall declarations */
+.heroText{
+  text-align: center;
+}
+
+.icon-square{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: #CDE8E5 !important;
+}
+
+  /*Pricing*/
+ #pricing{
+  margin: 30px 0px;
+}
+
+
+#pricing h2{
+  text-align: center;
+  margin: 30px 0px;
+}
+
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #4D869C !important;
+    --bs-btn-border-color: #4D869C !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7AB2B2 !important;
+    --bs-btn-hover-border-color: #4D869C !important;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4D869C;
+}
+
+.flexContainer{
+  text-align: center;
+}
+
+.centeredForm{
+  margin: 10px 50px;
+}
+
+.centeredButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer{
+  margin-top: 70px;
+}
